@@ -4,7 +4,12 @@
     <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
     <text class="userinfo-nickname">{{userInfo.nickName}}</text>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{userevent}}</text>
+</view>
+<view class="section">
+  <view class="section__title">我的活动</view>
+  <view class="flex-wrp" style="height: 300px;flex-direction:column;">
+    <navigator url="/pages/event/event">
+      <view class="flex-item">学习开发微信小程序</view>
+    </navigator>
   </view>
 </view>

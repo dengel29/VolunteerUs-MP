@@ -1,6 +1,6 @@
 <!--pages/event/event.wxml-->
-<view>event poster</view>
-<view>event title</view>
-<view>event date</view>
-<view>event location</view>
-<view>Volunteer Button</view>
+<view>海报</view>
+<view>标题</view>
+<view>日期</view>
+<view>地址</view>
+<view>志愿我们</view>
