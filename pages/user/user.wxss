@@ -1,4 +1,4 @@
-/* pages/myevents/myevents.wxss */
+/**index.wxss**/
 .userinfo {
   display: flex;
   flex-direction: column;

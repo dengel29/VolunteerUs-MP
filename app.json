@@ -2,15 +2,14 @@
   "pages":[
     "pages/index/index",
     "pages/event/event",
+    "pages/user/user",
     "pages/signup/signup",
-    "pages/myprofile/myprofile",
-    "pages/myevents/myevents",
     "pages/logs/logs"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Volunteer Us",
+    "navigationBarTitleText": "有志者",
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
@@ -21,14 +20,10 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath": "",
-        "selectedIconPath": "",
         "text": "活动"
       },
       {
-        "pagePath": "pages/myevents/myevents",
-        "iconPath": "",
-        "selectedIconPath": "",
+        "pagePath": "pages/user/user",
         "text": "我的"
       }
     ]
