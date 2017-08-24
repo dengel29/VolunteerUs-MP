@@ -5,14 +5,51 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    events: [
+      {
+        id: 1,
+        name: "学习开发微信小程序",
+        date: "08/24 - 09/10",
+        location: "Chengdu"
+      },
+      {
+        id: 2,
+        name: "学习开发微信小程序",
+        date: "08/24 - 09/10",
+        location: "Chengdu"
+      },
+      {
+        id: 3,
+        name: "学习开发微信小程序",
+        date: "08/24 - 09/10",
+        location: "Chengdu"
+      }
+    ]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    var selectedEvent;
+
+    for (var index in this.data.events) {
+      if (!selectedEvent) {
+        var event = this.data.events[index];
+        if (event.id == parseInt(options.id)) {
+          selectedEvent = event;
+        }
+      }
+    }
+
+    this.setData({
+      id: options.id,
+      event: selectedEvent
+    })
+
+    // wx.request({
+    //   url: 'http://localhost:3000/api/v1/events/' + options.id,
+    // })
   },
 
   /**

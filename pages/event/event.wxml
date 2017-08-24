@@ -1,6 +1,9 @@
 <!--pages/event/event.wxml-->
-<view>海报</view>
-<view>标题</view>
-<view>日期</view>
-<view>地址</view>
+<button>Volunteer</button>
+<view>Id: {{ id }}</view>
+<view>海报 </view>
+<view>标题: {{ event.name }}</view>
+<view>日期: {{ event.date}}</view>
+<view>地址: {{ event.location}}</view>
 <view>志愿我们</view>
+

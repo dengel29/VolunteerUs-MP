@@ -4,7 +4,27 @@ var app = getApp()
 Page({
   data: {
     userevent: 'Hello World',
-    userInfo: {}
+    userInfo: {},
+    events: [
+      {
+        name: "学习开发微信小程序",
+        date: "08/24 - 09/10",
+        location: "Chengdu",
+        status: "待审核"
+      },
+      {
+        name: "学习开发微信小程序",
+        date: "08/24 - 09/10",
+        location: "Chengdu",
+        status: "通过"
+      },
+      {
+        name: "学习开发微信小程序",
+        date: "08/24 - 09/10",
+        location: "Chengdu",
+        status: "未通过"
+      }
+    ]
   },
   //事件处理函数
   bindViewTap: function() {

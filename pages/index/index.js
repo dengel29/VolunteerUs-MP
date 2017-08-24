@@ -17,16 +17,19 @@ Page({
     duration: 1000,
     events: [
       {
+        id: 1,
         name: "学习开发微信小程序",
         date: "08/24 - 09/10",
         location: "Chengdu"
       },
       {
+        id: 2,
         name: "学习开发微信小程序",
         date: "08/24 - 09/10",
         location: "Chengdu"
       },
       {
+        id: 3,
         name: "学习开发微信小程序",
         date: "08/24 - 09/10",
         location: "Chengdu"
