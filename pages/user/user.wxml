@@ -7,9 +7,22 @@
 </view>
 <view class="section">
   <view class="section__title">我的活动</view>
-  <view class="flex-wrp" style="height: 300px;flex-direction:column;">
-    <navigator url="/pages/event/event">
-      <view class="flex-item">学习开发微信小程序</view>
-    </navigator>
+
+  <view class="section__events">
+
+    <block wx:for="{{events}}" wx:for-item="event">
+      <navigator url="/pages/event/event">
+        <view class="flex-wrp section__events__event" style="flex-direction:row;">
+          <view class="flex-item event-poster">
+            <image src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg"></image>
+          </view>
+          <view class="flex-item event-details">
+            <view class="event-title">{{ event.name }}</view>
+            <view class="event-date">{{ event.date }}</view>
+            <view class="event-location">{{ event.location }}</view>
+          </view>
+        </view>
+      </navigator>
+    </block>
   </view>
 </view>

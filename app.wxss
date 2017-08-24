@@ -8,3 +8,13 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+
+.flex-wrp{
+  margin-top: 60rpx;
+  display: flex;
+}
+
+.flex-item{
+  flex: 1;
+  font-size: 26rpx;
+}
