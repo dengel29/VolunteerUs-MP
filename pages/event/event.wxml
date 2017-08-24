@@ -1,0 +1,7 @@
+<!--pages/event/event.wxml-->
+<view class="enroll">
+  <navigator url="/pages/signup/signup">enroll here</navigator>
+</view>
+<view class="event title"><text>event tile</text></view>
+<view class="event date">event date</view>
+<view class="event location">event location</view>

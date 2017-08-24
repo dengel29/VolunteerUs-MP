@@ -1,12 +1,36 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/event/event",
+    "pages/signup/signup",
+    "pages/myprofile/myprofile",
+    "pages/myevents/myevents",
     "pages/logs/logs"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "Volunteer Us",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "backgroundColor": "#FFFFFE",
+    "borderStyle": "#D3D3D3",
+    "selectedColor": "#D03232",
+    "color": "#131313",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "",
+        "selectedIconPath": "",
+        "text": "活动"
+      },
+      {
+        "pagePath": "pages/myevents/myevents",
+        "iconPath": "",
+        "selectedIconPath": "",
+        "text": "我的"
+      }
+    ]
   }
 }

@@ -1,10 +1,24 @@
 <!--index.wxml-->
-<view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+
+<view class="card-container">
+ <view class="wrap"> 
+  <block wx:for="{{events}}" wx:key="objectId">
+   <view class="card">
+    <view class="card-description">
+     <view class="quote">
+     <navigator url="/pages/event/event" hover-class="navigator-hover">{{events[0]}}</navigator>
+     </view>
+    </view>
+   </view>
+  </block>
+ </view>
 </view>

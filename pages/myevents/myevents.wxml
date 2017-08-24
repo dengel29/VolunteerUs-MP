@@ -1,0 +1,18 @@
+<!--pages/myevents/myevents.wxml-->
+<view class="section">
+  <view class="container">
+    <view  bindtap="bindViewTap" class="userinfo">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+    <view class="events">
+      <text class="user-motto">{{motto}}</text>
+    </view>
+  </view>
+  <view class="section__title">flex-direction: column</view>
+  <view class="flex-wrp" style="height: 300px;flex-direction:column;">
+    <view class="flex-item bc_green">event1<navigator url="/pages/event/event" hover-class="navigator-hover">{{events[0]}}</navigator></view>
+    <view class="flex-item bc_red">event2<navigator url="/pages/event/event" hover-class="navigator-hover">{{events[0]}}</navigator></view>
+    <view class="flex-item bc_blue">event3<navigator url="/pages/event/event" hover-class="navigator-hover">{{events[0]}}</navigator></view>
+  </view>
+</view>
