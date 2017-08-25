@@ -5,26 +5,6 @@ Page({
    * 页面的初始数据
    */
   data: {
-    events: [
-      {
-        id: 1,
-        name: "学习开发微信小程序",
-        date: "08/24 - 09/10",
-        location: "Chengdu"
-      },
-      {
-        id: 2,
-        name: "学习开发微信小程序",
-        date: "08/24 - 09/10",
-        location: "Chengdu"
-      },
-      {
-        id: 3,
-        name: "学习开发微信小程序",
-        date: "08/24 - 09/10",
-        location: "Chengdu"
-      }
-    ]
   },
 
   /**
@@ -47,9 +27,13 @@ Page({
       event: selectedEvent
     })
 
-    // wx.request({
-    //   url: 'https://volunteer-us-final.herokuapp.com/api/v1/events/' + options.id,
-    // })
+    wx.request({
+      url: 'https://volunteer-us-final.herokuapp.com/api/v1/events/' + options.id,
+      method: 'get',
+      success: function(res) {
+        
+      }
+    })
   },
 
   /**
