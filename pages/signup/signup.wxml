@@ -1,2 +1,31 @@
 <!--pages/signup/signup.wxml-->
-<text>pages/signup/signup.wxml</text>
+<view class="header">
+ <view class="h1-header">Sign up</view>
+</view>
+<view class="container">  
+  <view class="usermotto">  
+    <text class="user-motto">{{motto}}</text>  
+    Username：  
+    <view class="section">
+      <input type="text" bindinput="userNameInput"/>  
+    </view>
+    Email：  
+    <view class="section">
+     <input type="text" bindinput="userNameInput"/>  
+    </view>
+    Phone number：  
+    <view class="section">
+     <input type="text" bindinput="userNameInput"/> 
+    </view> 
+    age:
+    <view class="section">
+     <input type="text" bindinput="userNameInput"/>  
+    </view>
+    University:
+    <view class="section">
+      <input type="text" bindinput="userPasswordInput" password="true"/> 
+    </view> 
+    <button bindtap="logIn">登录</button>  
+  </view>  
+
+</view>  
