@@ -10,9 +10,9 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "有志者",
-    "navigationBarTextStyle":"black"
+    "navigationBarBackgroundColor": "#2DB94D",
+    "navigationBarTitleText": "Volunteer Us",
+    "navigationBarTextStyle":"White"
   },
   "tabBar": {
     "backgroundColor": "#2DB94D",

@@ -45,7 +45,7 @@ Page({
 
 
     wx.request({
-      url: 'https://volunteer-us-forresty.herokuapp.com/api/v1/profile',
+      url: 'https://volunteer-us-final.herokuapp.com/api/v1/events',
       method: 'get',
       header: {
         'X-User-Token': wx.getStorageSync('token'),

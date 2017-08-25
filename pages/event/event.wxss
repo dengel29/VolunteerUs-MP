@@ -1,18 +1,5 @@
 /* pages/event/event.wxss */
-/* Header */
-.header {
-  background-color: #2DB94D;
-  height: 50px;
-  align-items: center;
-  text-align: center;
-  border-bottom: 1px solid #656464;
-}
-.h1-header {
-  color: white;
-  font-size: 45px; 
-  font-weight: 800;
-  padding-top: 4px;
-}
+
 /* button */
 button {
   text-align: center;
