@@ -17,19 +17,19 @@ Page({
     events: [
       {
         id: 1,
-        name: "学习开发微信小程序",
+        title: "学习开发微信小程序",
         date: "08/24 - 09/10",
         location: "Chengdu"
       },
       {
         id: 2,
-        name: "学习开发微信小程序",
+        title: "学习开发微信小程序",
         date: "08/24 - 09/10",
         location: "Chengdu"
       },
       {
         id: 3,
-        name: "学习开发微信小程序",
+        title: "学习开发微信小程序",
         date: "08/24 - 09/10",
         location: "Chengdu"
       }
@@ -42,7 +42,6 @@ Page({
   onLoad: function (options) {
 
     let page = this;
-
     wx.request({
       url: 'https://volunteer-us-final.herokuapp.com/api/v1/events',
       method: 'get',
@@ -50,6 +49,8 @@ Page({
         'X-User-Token': wx.getStorageSync('token'),
       },
       success: function(res) {
+        console.log(wx.getStorageSync('token'));
+
         console.log(res.data)
         page.setData({
           events: res.data
