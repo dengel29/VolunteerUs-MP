@@ -1,6 +1,6 @@
 <!--pages/index/index.wxml-->
-<view class="section section-container">  
-  <view class="section__banner">
+ <view class="section section-container">  
+  <!-- <view class="section__banner">
     <swiper indicator-dots="{{indicatorDots}}"
     autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
       <block wx:for="{{imgUrls}}">
@@ -9,7 +9,7 @@
         </swiper-item>
       </block>
     </swiper>
-  </view>
+  </view>  -->
 
   <view class="section__title">热门活动</view>
 
