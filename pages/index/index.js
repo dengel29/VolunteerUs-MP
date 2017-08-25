@@ -1,6 +1,5 @@
 // pages/index/index.js
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -41,10 +40,20 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+
+    let page = this;
+
     wx.request({
-      url: 'http://localhost:3000/events',
+      url: 'https://volunteer-us-final.herokuapp.com/api/v1/events',
       method: 'get',
-      success: function(data) {
+      header: {
+        'X-User-Token': wx.getStorageSync('token'),
+      },
+      success: function(res) {
+        console.log(res.data)
+        page.setData({
+          events: res.data
+        })
       }
     })
   },

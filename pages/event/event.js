@@ -48,7 +48,7 @@ Page({
     })
 
     // wx.request({
-    //   url: 'http://localhost:3000/api/v1/events/' + options.id,
+    //   url: 'https://volunteer-us-final.herokuapp.com/api/v1/events/' + options.id,
     // })
   },
 
