@@ -1,9 +1,20 @@
 <!--pages/event/event.wxml-->
-<button>Volunteer</button>
-<view>Id: {{ id }}</view>
-<view>海报 </view>
-<view>标题: {{ event.name }}</view>
-<view>日期: {{ event.date}}</view>
-<view>地址: {{ event.location}}</view>
-<view>志愿我们</view>
-
+<view class="header">
+  <view class="h1-header">Volunteer Us</view>
+</view>
+<view class="volunteer-container">
+  <view class="event-poster">
+    <image src="http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg"></image>
+  </view>
+  <view class="event-content">
+    <view class="event-header">标题:</view>
+    <view class="event-info"> {{ event.name }}</view>
+    <view class="event-header">日期: </view>
+    <view class="event-info"> {{ event.date}}</view>
+    <view class="event-header">地址: </view>
+    <view class="event-info">  {{ event.location}}</view>
+    <view class="event-header">Event Info: </view>
+    <view class="event-info"> I am sure most of you will agree that creating a buyer persona is crucial to any successful B2B lead generation and marketing campaign. However, in case you need more persuasive proof of the power of targeting,  </view>
+  </view>
+  <button>志愿我们</button>
+</view>

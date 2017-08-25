@@ -1,7 +1,9 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/event/event",
+    
+    "pages/event/event",    
+    
     "pages/user/user",
     "pages/signup/signup",
     "pages/logs/logs"
@@ -13,10 +15,10 @@
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
-    "backgroundColor": "#FFFFFE",
+    "backgroundColor": "#2DB94D",
     "borderStyle": "#D3D3D3",
     "selectedColor": "#D03232",
-    "color": "#131313",
+    "color": "white",
     "list": [
       {
         "pagePath": "pages/index/index",

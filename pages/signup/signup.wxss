@@ -1,1 +1,4 @@
 /* pages/signup/signup.wxss */
+.section__title {
+  text-align: center;
+}
