@@ -5,33 +5,29 @@ Page({
    * 页面的初始数据
    */
   data: {
+    event: {}
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var selectedEvent;
-
-    for (var index in this.data.events) {
-      if (!selectedEvent) {
-        var event = this.data.events[index];
-        if (event.id == parseInt(options.id)) {
-          selectedEvent = event;
-        }
-      }
-    }
-
-    this.setData({
-      id: options.id,
-      event: selectedEvent
-    })
+    let page = this;
 
     wx.request({
       url: 'https://volunteer-us-final.herokuapp.com/api/v1/events/' + options.id,
       method: 'get',
-      success: function(res) {
-        
+      header: {
+        'X-User-Token': wx.getStorageSync('token'),
+      },
+      success: function (res) {
+        console.log('got event data!');
+        console.log(wx.getStorageSync('token'));
+
+        console.log(res.data)
+        page.setData({
+          event: res.data
+        })
       }
     })
   },

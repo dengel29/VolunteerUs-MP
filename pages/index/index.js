@@ -14,26 +14,26 @@ Page({
     autoplay: true,
     interval: 5000,
     duration: 1000,
-    events: [
-      {
-        id: 1,
-        title: "学习开发微信小程序",
-        date: "08/24 - 09/10",
-        location: "Chengdu"
-      },
-      {
-        id: 2,
-        title: "学习开发微信小程序",
-        date: "08/24 - 09/10",
-        location: "Chengdu"
-      },
-      {
-        id: 3,
-        title: "学习开发微信小程序",
-        date: "08/24 - 09/10",
-        location: "Chengdu"
-      }
-    ]
+    // events: [
+    //   {
+    //     id: 1,
+    //     title: "学习开发微信小程序",
+    //     date: "08/24 - 09/10",
+    //     location: "Chengdu"
+    //   },
+    //   {
+    //     id: 2,
+    //     title: "学习开发微信小程序",
+    //     date: "08/24 - 09/10",
+    //     location: "Chengdu"
+    //   },
+    //   {
+    //     id: 3,
+    //     title: "学习开发微信小程序",
+    //     date: "08/24 - 09/10",
+    //     location: "Chengdu"
+    //   }
+    // ]
   },
 
   /**

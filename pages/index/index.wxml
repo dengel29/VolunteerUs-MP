@@ -11,7 +11,7 @@
     </swiper>
   </view>  -->
 
-  <view class="section__title">热门活动</view>
+  <!-- <view class="section__title">热门活动</view> -->
 
   <view class="section__events">
 
@@ -19,7 +19,7 @@
       <navigator open-type="redirect" url="/pages/event/event?id={{ event.id }}">
         <view class="flex-wrp section__events__event" style="flex-direction:row;">
           <view class="flex-item event-poster">
-            <image src="http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg"></image>
+            <image src="http://lorempixel.com/400/200"></image>
           </view>
           <view class="flex-item event-details">
             <view class="event-title">{{ event.title }}</view>

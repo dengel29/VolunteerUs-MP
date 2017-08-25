@@ -5,7 +5,7 @@
 <view class="container">  
   <view class="usermotto">  
     <text class="user-motto">{{motto}}</text>  
-    Username：  
+    Full name：  
     <view class="section">
       <input type="text" bindinput="userNameInput"/>  
     </view>
@@ -24,8 +24,9 @@
     University:
     <view class="section">
       <input type="text" bindinput="userPasswordInput" password="true"/> 
-    </view> 
-    <button bindtap="logIn">登录</button>  
+    </view>  
   </view>  
-
 </view>  
+<navigator url="../user/user" open-type="switchTab">
+   <button>申请志愿</button>   
+</navigator>
