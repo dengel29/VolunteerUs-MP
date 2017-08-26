@@ -27,6 +27,6 @@
     </view>  
   </view>  
 </view>  
-<navigator url="../user/user" open-type="switchTab">
-   <button>申请志愿</button>   
-</navigator>
+<form bindsubmit="formSubmit">
+   <button formType="submit">申请志愿</button>   
+</form>
