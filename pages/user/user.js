@@ -4,7 +4,7 @@ var app = getApp()
 
 Page({
   data: {
-    event: {}
+    events: {}
   },
   //事件处理函数
   bindViewTap: function() {
