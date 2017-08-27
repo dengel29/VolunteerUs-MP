@@ -1,30 +1,10 @@
 //index.js
 //获取应用实例
 var app = getApp()
+
 Page({
   data: {
-    userevent: 'Hello World',
-    userInfo: {},
-    events: [
-      {
-        name: "学习开发微信小程序",
-        date: "08/24 - 09/10",
-        location: "Chengdu",
-        status: "待审核"
-      },
-      {
-        name: "学习开发微信小程序",
-        date: "08/24 - 09/10",
-        location: "Chengdu",
-        status: "通过"
-      },
-      {
-        name: "学习开发微信小程序",
-        date: "08/24 - 09/10",
-        location: "Chengdu",
-        status: "未通过"
-      }
-    ]
+    events: {}
   },
   //事件处理函数
   bindViewTap: function() {
@@ -34,25 +14,21 @@ Page({
   },
   onLoad: function () {
     console.log('onLoad')
-    var that = this
-    //调用应用实例的方法获取全局数据
-    app.getUserInfo(function(userInfo){
-      //更新数据
-      that.setData({
-        userInfo:userInfo
-      })
-    })
-
-
+    let page = this;
     wx.request({
-      url: 'https://volunteer-us-final.herokuapp.com/api/v1/events/volunteer_application',
+      url: 'http://localhost:3000/api/v1/user/events',
       method: 'get',
       header: {
         'X-User-Token': wx.getStorageSync('token'),
       },
       success: function (res) {
-        console.log(res)
+        console.log(wx.getStorageSync('token'));
+
+        console.log(res.data)
+        page.setData({
+          events: res.data
+        })
       }
     })
-  }
+  },
 })
