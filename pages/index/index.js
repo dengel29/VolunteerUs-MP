@@ -43,7 +43,7 @@ Page({
 
     let page = this;
     wx.request({
-      url: 'https://volunteer-us-final.herokuapp.com/api/v1/events',
+      url: 'https://volunteer-us-final.herokuapp.com/api/v1/user/events',
       method: 'get',
       header: {
         'X-User-Token': wx.getStorageSync('token'),
