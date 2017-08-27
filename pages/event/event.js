@@ -15,7 +15,7 @@ Page({
     let page = this;
 
     wx.request({
-      url: 'https://volunteer-us-final.herokuapp.com/api/v1/events/' + options.id,
+      url: 'https://volunteer-us.shanghaiwogeng.com/api/v1/events/' + options.id,
       method: 'get',
       header: {
         'X-User-Token': wx.getStorageSync('token'),

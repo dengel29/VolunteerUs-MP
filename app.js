@@ -19,7 +19,7 @@ App({
                 console.log("didnt set storge")
               }
             },
-            url: 'https://volunteer-us-final.herokuapp.com/api/v1/users',
+            url: 'https://volunteer-us.shanghaiwogeng.com/api/v1/users',
             method: "post",
             data: {
               code: res.code,

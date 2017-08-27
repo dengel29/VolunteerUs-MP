@@ -4,7 +4,7 @@ Page({
     let page = this;
 
     wx.request({
-      url: 'http://localhost:3000/api/v1/events/' + page.data.event_id + '/actions/apply',
+      url: 'http://volunteer-us.shanghaiwogeng/api/v1/events/' + page.data.event_id + '/actions/apply',
       method: 'post',
       header: {
         'X-User-Token': wx.getStorageSync('token'),

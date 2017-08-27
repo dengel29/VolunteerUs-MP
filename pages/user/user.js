@@ -16,7 +16,7 @@ Page({
     console.log('onLoad')
     let page = this;
     wx.request({
-      url: 'http://localhost:3000/api/v1/user/events',
+      url: 'https://volunteer-us.shanghaiwogeng.com/api/v1/user/events',
       method: 'get',
       header: {
         'X-User-Token': wx.getStorageSync('token'),
