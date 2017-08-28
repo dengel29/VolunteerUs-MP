@@ -42,7 +42,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.loadData();
+},
+  loadData: function () {
     let page = this;
     wx.request({
       url: app.globalData.baseUrl + '/api/v1/events',
@@ -93,7 +95,7 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-  
+    this.loadData();
   },
 
   /**
