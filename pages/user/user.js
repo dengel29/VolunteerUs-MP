@@ -14,14 +14,21 @@ Page({
   },
   onLoad: function () {
     console.log('onLoad')
+    this.loadData();
+  },
+
+  onPullDownRefresh: function () {
+    this.loadData();
+  },
+
+  loadData: function() {
     let page = this;
 
-    app.getUserInfo(function(userInfo) {
+    app.getUserInfo(function (userInfo) {
       page.setData({
         userInfo: userInfo
       })
     });
-    this.loadData();
 
     wx.request({
       url: app.globalData.baseUrl + 'api/v1/user/events',
@@ -38,8 +45,5 @@ Page({
         })
       }
     })
-  },
-  onPullDownRefresh: function () {
-    this.loadData();
-  },
+  }
 })
