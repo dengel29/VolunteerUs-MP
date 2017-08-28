@@ -1,21 +1,35 @@
 <!--pages/event/event.wxml-->
 
 <view class="volunteer-container">
-  <view class="event-poster">
-    <image src="{{event.poster}}"></image>
-  </view>
-  <view class="event-content">
-    <view class="event-header">标题:</view>
-    <view class="event-info"> {{ event.title }}</view>
-    <view class="event-header">日期: </view>
-    <view class="event-info"> {{ event.date}}</view>
-    <view class="event-header">地址: </view>
-    <view class="event-info">  {{ event.location}}</view>
-    <view class="event-header">志愿人数: </view>
-    <view class="event-info">  {{ event.volunteer_number}}</view>
-    <view class="event-header">活动信息: </view>
-    <view class="event-info"> I am sure most of you will agree that creating a buyer persona is crucial to any successful B2B lead generation and marketing campaign. However, in case you need more persuasive proof of the power of targeting,  </view>
-  </view>
+  <scroll-view scroll-y class="scroll-view">
+    <view class="event-poster">
+      <image src="{{event.poster}}"></image>
+    </view>
+    <view class="event-content">
+      <view class="event-title"> {{ event.title }}</view>
+
+      <view class="event-header">
+      <image src="../../images/time.png" class="icon"></image>
+       <view class="event-info">{{ event.date}}</view></view>
+
+      <view class="event-header">
+      <image src="../../images/location.png" class="icon"></image>
+       <view class="event-info">{{ event.location}}</view></view>
+
+      <view class="event-header">
+      <image src="../../images/people.png" class="icon"></image>
+       <view class="event-info">{{ event.volunteer_number}}</view></view>
+
+
+      <view class="event-header">活动信息: </view>
+      <view class="event-more"> I am sure most of you will agree that creating a buyer persona is crucial to any successful B2B lead generation and marketing campaign. However, in case you need more persuasive proof of the power of targeting,  </view>
+      <view class="event-header">志愿者工作内容: </view>
+      <view class="event-more"> I am sure most of you will agree that creating a buyer persona is crucial to any successful B2B lead generation and marketing campaign. However, in case you need more persuasive proof of the power of targeting,  </view>
+      <view class="event-header">志愿者福利: </view>
+      <view class="event-more"> I am sure most of you will agree that creating a buyer persona is crucial to any successful B2B lead generation and marketing campaign. However, in case you need more persuasive proof of the power of targeting,  </view>
+    </view>
+  </scroll-view>
+  
   <navigator url="../signup/signup?id={{ event.id }}">
    <button bindtap="submit" type="primary" class="volunteer_add">志愿我们</button>   
   </navigator>
