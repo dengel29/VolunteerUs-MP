@@ -19,7 +19,7 @@ App({
                 console.log("didnt set storge")
               }
             },
-            url: 'https://volunteer-us.shanghaiwogeng.com/api/v1/users',
+            url: this.globalData.baseUrl + 'api/v1/users',
             method: "post",
             data: {
               code: res.code,
@@ -49,6 +49,7 @@ App({
   },
 
   globalData: {
-    userInfo: null
+    userInfo: null,
+    baseUrl: 'http://localhost:3000/'
   }
 })

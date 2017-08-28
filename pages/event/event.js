@@ -1,4 +1,6 @@
 // pages/event/event.js
+var app = getApp()
+
 Page({
 
   /**
@@ -15,7 +17,7 @@ Page({
     let page = this;
 
     wx.request({
-      url: 'https://volunteer-us.shanghaiwogeng.com/api/v1/events/' + options.id,
+      url: app.globalData.baseUrl + 'api/v1/events/' + options.id,
       method: 'get',
       header: {
         'X-User-Token': wx.getStorageSync('token'),
