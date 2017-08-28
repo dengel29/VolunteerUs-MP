@@ -11,7 +11,7 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#2DB94D",
-    "navigationBarTitleText": "有志者",
+    "navigationBarTitleText": "有志者 VolunteerUs",
     "navigationBarTextStyle":"White"
   },
   "tabBar": {
