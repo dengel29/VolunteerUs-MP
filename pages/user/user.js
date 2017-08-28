@@ -15,6 +15,12 @@ Page({
   onLoad: function () {
     console.log('onLoad')
     let page = this;
+
+    app.getUserInfo(function(userInfo) {
+      page.setData({
+        userInfo: userInfo
+      })
+    });
     this.loadData();
 
     wx.request({
