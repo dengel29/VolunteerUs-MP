@@ -24,7 +24,7 @@ image {
 }
 .event-info {
   text-align: left;
-  color: #2DB94D;
+  color: grey;
   font-size: 15px;
 }
 
