@@ -27,7 +27,7 @@
   margin: 10rpx 20rpx;
   border-radius: 5rpx;
   border: solid 1px rgba(0, 0, 0, 0.5);
-  box-shadow: 3rpx 3rpx 3rpx 3rpx grey;
+  box-shadow: 1rpx 1rpx 1rpx 1rpx grey;
   color: #2DB94D;
   margin-top: 20px;
 }
