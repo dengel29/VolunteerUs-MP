@@ -1,7 +1,6 @@
 {
   "pages":[
     "pages/index/index",
-    
     "pages/event/event",    
     
     "pages/user/user",
@@ -12,7 +11,7 @@
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#2DB94D",
     "navigationBarTitleText": "Volunteer Us",
-    "navigationBarTextStyle":"White"
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "backgroundColor": "#2DB94D",

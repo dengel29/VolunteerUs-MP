@@ -20,6 +20,7 @@
   padding: 10rpx 20rpx;
   border-bottom: solid 1rpx #CCC;
   text-align: center;
+  background-color: white;
 }
 
 .section__events__event {
@@ -28,7 +29,7 @@
   border-radius: 5rpx;
   border: solid 1px rgba(0, 0, 0, 0.5);
   box-shadow: 3rpx 3rpx 3rpx 3rpx grey;
-  color: #2DB94D;
+  color: grey;
 }
 
 .section__events__event .event-details {

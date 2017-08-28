@@ -24,10 +24,6 @@ image {
 }
 .event-info {
   text-align: center;
-  color: #2DB94D;
+  color: grey;
   font-size: 15px;
-}
-
-.volunteer-container {
-  box-color: red;
 }

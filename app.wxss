@@ -7,8 +7,10 @@
   justify-content: space-between;
   padding: 20rpx 0;
   box-sizing: border-box;
-  /* background-color: #2DB94D; */
 } 
+page {
+  background-color: rgb(244, 252, 247);
+}
 
 .flex-wrp{
   margin-top: 60rpx;
