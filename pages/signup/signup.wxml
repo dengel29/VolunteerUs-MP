@@ -28,5 +28,5 @@
   </view>  
 </view>  
 <form bindsubmit="formSubmit">
-   <button formType="submit">申请志愿</button>   
+   <button bindtap="submit" type="primary" class="volunteer_add">申请志愿</button>   
 </form>
