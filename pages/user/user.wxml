@@ -3,6 +3,9 @@
   <view  bindtap="bindViewTap" class="userinfo">
     <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
     <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    <text class="userinfo-email">{{userInfo.email}}</text>
+    <text class="userinfo-phone_number">{{userInfo.phone_number}}</text>
+    <text class="userinfo-university">{{userInfo.university}}</text>
   </view>
 </view>
 <view class="section">
