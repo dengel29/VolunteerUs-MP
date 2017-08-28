@@ -1,4 +1,6 @@
 // pages/index/index.js
+var app = getApp()
+
 Page({
   /**
    * 页面的初始数据
@@ -43,7 +45,7 @@ Page({
 
     let page = this;
     wx.request({
-      url: 'https://volunteer-us.shanghaiwogeng.com/api/v1/events',
+      url: app.globalData.baseUrl + '/api/v1/events',
       method: 'get',
       header: {
         'X-User-Token': wx.getStorageSync('token'),

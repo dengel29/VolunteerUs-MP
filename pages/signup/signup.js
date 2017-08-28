@@ -1,10 +1,12 @@
 // pages/signup/signup.js
+var app = getApp()
+
 Page({
   formSubmit: function(e) {
     let page = this;
 
     wx.request({
-      url: 'http://volunteer-us.shanghaiwogeng/api/v1/events/' + page.data.event_id + '/actions/apply',
+      url: app.globalData.baseUrl + 'api/v1/events/' + page.data.event_id + '/actions/apply',
       method: 'post',
       header: {
         'X-User-Token': wx.getStorageSync('token'),
