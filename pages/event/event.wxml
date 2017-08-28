@@ -2,7 +2,7 @@
 
 <view class="volunteer-container">
   <view class="event-poster">
-    <image src="http://lorempixel.com/400/200"></image>
+    <image src="{{event.poster}}"></image>
   </view>
   <view class="event-content">
     <view class="event-header">标题:</view>
