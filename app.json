@@ -11,22 +11,26 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#2DB94D",
-    "navigationBarTitleText": "Volunteer Us",
+    "navigationBarTitleText": "VolunteerUs",
     "navigationBarTextStyle":"White"
   },
   "tabBar": {
-    "backgroundColor": "#2DB94D",
+    "backgroundColor": "White",
     "borderStyle": "#D3D3D3",
-    "selectedColor": "#D03232",
-    "color": "white",
+    "selectedColor": "#2DB94D",
+    "color": "#051C0A",
     "list": [
       {
         "pagePath": "pages/index/index",
+        "iconPath": "images/search.png",
+        "selectedIconPath": "images/search.png",
         "text": "活动"
       },
       {
         "pagePath": "pages/user/user",
-        "text": "我的"
+        "iconPath": "images/people.png",
+        "selectedIconPath": "images/people.png",    
+        "text": "志者"
       }
     ]
   }
