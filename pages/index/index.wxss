@@ -6,37 +6,39 @@
 
 .section__title {
   padding: 10rpx 20rpx;
-  border-bottom: solid 1rpx #CCC;
-  text-align: center;
+  text-align: left;
   background-color: white;
-  color: #2DB94D;
+  color: #051C0A;
 }
 .section__events__event {
-  height: 300rpx;
+  height: 270rpx;
   margin: 10rpx 20rpx;
   border-radius: 5rpx;
   border: solid 1px rgba(0, 0, 0, 0.5);
   box-shadow: 3rpx 3rpx 3rpx 3rpx grey;
 }
 
+.section__events__event .event-title{
+  font-weight: bolder;
+  font-size: large;
+  color: #051C0A;
+}
+.section__events__event .event-date {
+  margin-top: 20px;
+  color:#596d5E;
+}
+.section__events__event .event-location{
+  margin-top: 20px;
+  color: #596d5E;
+}
 .section__events__event .event-details {
   width: 100%;
   padding: 20rpx;
   background-color: white;
-  color: #2DB94D;
+  color: #596d5E;
 }
-.section__events__event .event-title{
-  font-weight: bolder;
-}
-.section__events__event .event-date {
-  margin-top: 20px;
-}
-.section__events__event .event-location{
-  margin-top: 60px;
-  text-align: right;
-}
-
 .event-poster image {
-  width: 400rpx;
-  height: 300rpx;
+  width: 350rpx;
+  height: 250rpx;
+  padding: 10rpx 10rpx;
 }
