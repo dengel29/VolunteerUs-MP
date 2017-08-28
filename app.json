@@ -12,7 +12,7 @@
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#2DB94D",
     "navigationBarTitleText": "VolunteerUs",
-    "navigationBarTextStyle":"White"
+    "navigationBarTextStyle": "White"
   },
   "tabBar": {
     "backgroundColor": "White",

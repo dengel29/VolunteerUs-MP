@@ -15,6 +15,8 @@ Page({
   onLoad: function () {
     console.log('onLoad')
     let page = this;
+    this.loadData();
+
     wx.request({
       url: app.globalData.baseUrl + 'api/v1/user/events',
       method: 'get',
@@ -30,5 +32,8 @@ Page({
         })
       }
     })
+  },
+  onPullDownRefresh: function () {
+    this.loadData();
   },
 })
