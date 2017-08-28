@@ -19,13 +19,35 @@ image {
 }
 .event-header {
   color: #2DB94D;
-  font-size: 20px;
+  font-size: 18px;
   margin: 10px;
+  font-style: bolder;
+}
+
+.event-title{
+  font-size: 30px;
+  text-align: left;
+  font-style: bolder;
 }
 .event-info {
-  text-align: left;
   color: grey;
   font-size: 15px;
+  display: inline;
+  padding-left: 50px;
+}
+.event-more {
+  color: grey;
+  font-size: 15px;
+  display: left;
+  margin-left: 10px;
+}
+.icon {
+  width: 45rpx;
+  height: 45rpx;
+}
+.scroll-view{
+  height: 100%;
+  margin-bottom: 50px;
 }
 
 .volunteer-container {
