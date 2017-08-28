@@ -22,14 +22,14 @@
 
 
       <view class="event-header">活动信息: </view>
-      <view class="event-more"> I am sure most of you will agree that creating a buyer persona is crucial to any successful B2B lead generation and marketing campaign. However, in case you need more persuasive proof of the power of targeting,  </view>
+      <view class="event-more"> {{ event.description}}  </view>
       <view class="event-header">志愿者工作内容: </view>
-      <view class="event-more"> I am sure most of you will agree that creating a buyer persona is crucial to any successful B2B lead generation and marketing campaign. However, in case you need more persuasive proof of the power of targeting,  </view>
+      <view class="event-more"> {{ event.volunteer_duties}}  </view>
       <view class="event-header">志愿者福利: </view>
-      <view class="event-more"> I am sure most of you will agree that creating a buyer persona is crucial to any successful B2B lead generation and marketing campaign. However, in case you need more persuasive proof of the power of targeting,  </view>
+      <view class="event-more">{{ event.volunteer_perks}}</view>
     </view>
   </scroll-view>
-  
+
   <navigator url="../signup/signup?id={{ event.id }}">
    <button bindtap="submit" type="primary" class="volunteer_add">志愿我们</button>   
   </navigator>
