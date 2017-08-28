@@ -1,32 +1,32 @@
 <!--pages/signup/signup.wxml-->
 <view class="header">
- <view class="h1-header">Sign up</view>
+ <view class="h1-header">用户注册</view>
 </view>
 <view class="container">  
   <view class="usermotto">  
     <text class="user-motto">{{motto}}</text>  
-    Full name：  
+    名字：  
     <view class="section">
       <input type="text" bindinput="userNameInput"/>  
     </view>
-    Email：  
+    邮箱：  
     <view class="section">
      <input type="text" bindinput="userNameInput"/>  
     </view>
-    Phone number：  
+    联系电话：  
     <view class="section">
      <input type="text" bindinput="userNameInput"/> 
     </view> 
-    age:
+    年龄:
     <view class="section">
      <input type="text" bindinput="userNameInput"/>  
     </view>
-    University:
+    在校大学:
     <view class="section">
       <input type="text" bindinput="userPasswordInput" password="true"/> 
     </view>  
   </view>  
 </view>  
 <form bindsubmit="formSubmit">
-   <button formType="submit">申请志愿</button>   
+   <button bindtap="submit" type="primary" class="volunteer_add">申请志愿</button>   
 </form>

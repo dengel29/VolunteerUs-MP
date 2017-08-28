@@ -13,10 +13,10 @@
     <view class="event-info">  {{ event.location}}</view>
     <view class="event-header">志愿人数: </view>
     <view class="event-info">  {{ event.volunteer_number}}</view>
-    <view class="event-header">Event Info: </view>
+    <view class="event-header">活动信息: </view>
     <view class="event-info"> I am sure most of you will agree that creating a buyer persona is crucial to any successful B2B lead generation and marketing campaign. However, in case you need more persuasive proof of the power of targeting,  </view>
   </view>
   <navigator url="../signup/signup?id={{ event.id }}">
-    <button>志愿我们</button>
+   <button bindtap="submit" type="primary" class="volunteer_add">志愿我们</button>   
   </navigator>
 </view>
