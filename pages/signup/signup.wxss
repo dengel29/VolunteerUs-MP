@@ -7,15 +7,14 @@
 .header {
   text-align: center;
   align-content: center;
-  background-color:#1fa840 ;
+  background-color: White;
   height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid #656464 ;
 }
 .h1-header {
-  color:white;
+  color:black;
   font-size: 45rpx;
   font-weight: 800;
   padding: 30px;
@@ -23,6 +22,5 @@
 
 .section{
   background-color:#f7f7f7;
-  margin-bottom: 20rpx;
-
+  margin-bottom: 70rpx;
 }

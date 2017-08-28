@@ -23,7 +23,7 @@ image {
   margin: 10px;
 }
 .event-info {
-  text-align: center;
+  text-align: left;
   color: #2DB94D;
   font-size: 15px;
 }
