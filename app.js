@@ -6,6 +6,8 @@ App({
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
 
+    let app = this;
+
     wx.login({
       success: function(res) {
         if (res.code) {
@@ -19,7 +21,7 @@ App({
                 console.log("didnt set storge")
               }
             },
-            url: 'https://volunteer-us.shanghaiwogeng.com/api/v1/users',
+            url: app.globalData.baseUrl + 'api/v1/users',
             method: "post",
             data: {
               code: res.code,
@@ -49,6 +51,7 @@ App({
   },
 
   globalData: {
-    userInfo: null
+    userInfo: null,
+    baseUrl: 'http://localhost:3000/'
   }
 })

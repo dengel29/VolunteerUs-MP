@@ -27,3 +27,7 @@ image {
   color: #2DB94D;
   font-size: 15px;
 }
+
+.volunteer-container {
+  box-color: red;
+}
