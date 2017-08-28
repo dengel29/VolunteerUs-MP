@@ -21,6 +21,7 @@ Page({
         userInfo: userInfo
       })
     });
+    this.loadData();
 
     wx.request({
       url: app.globalData.baseUrl + 'api/v1/user/events',
@@ -37,5 +38,8 @@ Page({
         })
       }
     })
+  },
+  onPullDownRefresh: function () {
+    this.loadData();
   },
 })
