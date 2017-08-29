@@ -23,7 +23,7 @@
     </view>
     在校大学:
     <view class="section">
-      <input type="text" bindinput="userPasswordInput" password="true"/> 
+      <input type="text" bindinput="userNameInput"/> 
     </view>  
   </view>  
 </view>  
