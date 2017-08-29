@@ -75,3 +75,13 @@
   line-height: 20rpx; 
   font-size: small; 
 }
+
+.empty-image {
+  margin-left: 35px;
+  padding-top:30px;
+
+}
+
+.event-empty {
+  margin-left: 10px;
+}

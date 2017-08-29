@@ -47,7 +47,8 @@ Page({
 
         console.log(res.data)
         page.setData({
-          events: res.data
+          events: res.data,
+          empty: res.data.length === 0
         })
       }
     })
