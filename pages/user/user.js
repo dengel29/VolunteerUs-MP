@@ -15,6 +15,7 @@ Page({
   onLoad: function () {
     console.log('onLoad')
     this.loadData();
+
   },
 
   onPullDownRefresh: function () {
@@ -23,6 +24,10 @@ Page({
 
   loadData: function() {
     let page = this;
+
+    wx.showLoading({
+      title: '加载中',
+    })
 
     app.getUserInfo(function (userInfo) {
       page.setData({
@@ -37,6 +42,7 @@ Page({
         'X-User-Token': wx.getStorageSync('token'),
       },
       success: function (res) {
+        wx.hideLoading()
         console.log(wx.getStorageSync('token'));
 
         console.log(res.data)
