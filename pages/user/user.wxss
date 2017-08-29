@@ -19,7 +19,7 @@
 .section__title {
   padding: 10rpx 20rpx;
   border-bottom: solid 1rpx #CCC;
-  text-align: center;
+  text-align: left;
 }
 
 .section__events__event {
@@ -42,9 +42,7 @@
   height: 300rpx;
 }
 
-.section__events__event .event-date {
-  margin-top: 20px;
-}
-.section__events__event .event-location{
-  margin-top: 40px;
+.icon {
+  width: 25rpx;
+  height: 25rpx;
 }

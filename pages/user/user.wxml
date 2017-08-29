@@ -24,8 +24,12 @@
           </view>
           <view class="flex-item event-details">
             <view class="event-title">{{ event.title }}</view>
-            <view class="event-date">{{ event.date }}</view>
-            <view class="event-location">{{ event.location }}</view>
+            <view class="event-date">
+            <image src="../../images/time.png" class="icon"></image>
+            {{ event.date }}</view>
+            <view class="event-location">
+            <image src="../../images/location.png" class="icon"></image>
+            {{ event.location }}</view>
             <button>confirmed</button>
           </view>
         </view>
