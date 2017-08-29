@@ -7,35 +7,11 @@ Page({
    */
   data: {
     userInfo: {},
-    imgUrls: [
-      'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
-      'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
-      'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
-    ],
+    imgUrls: [],
     indicatorDots: true,
     autoplay: true,
     interval: 5000,
     duration: 1000,
-    // events: [
-    //   {
-    //     id: 1,
-    //     title: "学习开发微信小程序",
-    //     date: "08/24 - 09/10",
-    //     location: "Chengdu"
-    //   },
-    //   {
-    //     id: 2,
-    //     title: "学习开发微信小程序",
-    //     date: "08/24 - 09/10",
-    //     location: "Chengdu"
-    //   },
-    //   {
-    //     id: 3,
-    //     title: "学习开发微信小程序",
-    //     date: "08/24 - 09/10",
-    //     location: "Chengdu"
-    //   }
-    // ]
   },
 
   /**
@@ -46,15 +22,32 @@ Page({
 },
   loadData: function () {
     let page = this;
+
     wx.request({
-      url: app.globalData.baseUrl + '/api/v1/events',
+      url: app.globalData.baseUrl + 'api/v1/events/featured',
+      method: 'get',
+      header: {
+        'X-User-Token': wx.getStorageSync('token'),
+      },
+      success: function (res) {
+        console.log(wx.getStorageSync('token'));
+        console.log('featured events')
+        console.log(res.data)
+        page.setData({
+          featuredEvents: res.data
+        })
+      }
+    })
+
+    wx.request({
+      url: app.globalData.baseUrl + 'api/v1/events',
       method: 'get',
       header: {
         'X-User-Token': wx.getStorageSync('token'),
       },
       success: function(res) {
         console.log(wx.getStorageSync('token'));
-
+        console.log('all events')
         console.log(res.data)
         page.setData({
           events: res.data
