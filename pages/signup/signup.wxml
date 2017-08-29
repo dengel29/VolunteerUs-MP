@@ -7,23 +7,23 @@
     <text class="user-motto">{{motto}}</text>  
     名字：  
     <view class="section">
-      <input type="text" bindinput="userNameInput"/>  
+      <input type="text" placeholder="John Smith"/>  
     </view>
     邮箱：  
     <view class="section">
-     <input type="text" bindinput="userNameInput"/>  
+     <input type="text" placeholder="johnsmith@gmail.com"/>  
     </view>
     联系电话：  
     <view class="section">
-     <input type="text" bindinput="userNameInput"/> 
+     <input type="text" placeholder="13293843827"/> 
     </view> 
     年龄:
     <view class="section">
-     <input type="text" bindinput="userNameInput"/>  
+     <input type="text" placeholder="21"/>  
     </view>
     在校大学:
     <view class="section">
-      <input type="text" bindinput="userNameInput"/> 
+      <input type="text" placeholder="Sichuan University"/> 
     </view>  
   </view>  
 </view>  
