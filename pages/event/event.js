@@ -36,13 +36,26 @@ Page({
 
       success: function (res) {
         wx.hideLoading()
-        console.log('got event data!');
-        console.log(wx.getStorageSync('token'));
 
-        console.log(res.data)
+        event = res.data;
+
+        let status_in_chinese = null;
+
+        if (event.status == 'pending') {
+          status_in_chinese = "正在审核中";
+        } else if (event.status == 'declined') {
+          status_in_chinese = "很抱歉 审核没有通过，看看其他的活动！";
+        } else if (event.status == 'accepted') {
+          status_in_chinese = "审核成功！主办方会联系您！";
+        } else {
+          status_in_chinese = 'panic! illegal status!'
+        };
+
         page.setData({
-          event: res.data,
-          event_owner: res.data.id == wx.getStorageSync('currentUserId')
+          event: event,
+          event_owner: event.id == wx.getStorageSync('currentUserId'),
+          applied: event.status,
+          status_in_chinese: status_in_chinese
         })
       }
     })
