@@ -43,7 +43,7 @@
 }
 
 .section__events__event .event-details {
-  width: 100%;
+  width: 94%;
   padding: 20rpx;
   background-color: white;
   color: #98aa9c;
