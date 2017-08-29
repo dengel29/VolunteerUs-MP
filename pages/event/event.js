@@ -18,9 +18,13 @@ Page({
       event_id: options.id
     })
     this.loadData();
+    
   },
 
   loadData: function(){
+    wx.showLoading({
+      title: '加载中',
+    })
     let page = this;
 
     wx.request({
@@ -29,7 +33,9 @@ Page({
       header: {
         'X-User-Token': wx.getStorageSync('token'),
       },
+
       success: function (res) {
+        wx.hideLoading()
         console.log('got event data!');
         console.log(wx.getStorageSync('token'));
 

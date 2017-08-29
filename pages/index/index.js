@@ -21,6 +21,9 @@ Page({
     this.loadData();
 },
   loadData: function () {
+    wx.showLoading({
+      title: '加载中',
+    })
     let page = this;
 
     wx.request({
@@ -30,6 +33,7 @@ Page({
         'X-User-Token': wx.getStorageSync('token'),
       },
       success: function (res) {
+        wx.hideLoading()
         console.log(wx.getStorageSync('token'));
         console.log('featured events')
         console.log(res.data)
@@ -46,6 +50,7 @@ Page({
         'X-User-Token': wx.getStorageSync('token'),
       },
       success: function(res) {
+        wx.hideLoading()
         console.log(wx.getStorageSync('token'));
         console.log('all events')
         console.log(res.data)

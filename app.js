@@ -54,5 +54,6 @@ App({
     userInfo: null,
     // baseUrl: 'https://volunteer-us.shanghaiwogeng.com/'
     baseUrl: 'https://volunteer-us.shanghaiwogeng.com/'
-  }
+  },
+
 })
