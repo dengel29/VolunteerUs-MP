@@ -1,5 +1,8 @@
 /* pages/index/index.wxss */
 
+.section-container {
+  background-color: #FAFAFA;
+}
 .section__banner image {
   width: 100%;
 }
@@ -23,23 +26,35 @@
   font-weight: bolder;
   font-size: large;
   color: #051C0A;
+  height: 105rpx;
+  overflow: hidden;
+}
+.section__events__event .event-category {
+  color: #FFF;
+  display: inline-block;
+  background-color: slategrey;
+  padding: 5rpx 10rpx;
+  border-radius: 10rpx;
 }
 .section__events__event .event-date {
-  margin-top: 20px;
-  color:#596d5E;
+  color:#98aa9c;
 }
 .section__events__event .event-location{
-  margin-top: 20px;
-  color: #596d5E;
+  color: #98aa9c;
 }
 .section__events__event .event-details {
   width: 100%;
   padding: 20rpx;
   background-color: white;
-  color: #596d5E;
+  color: #98aa9c;
 }
 .event-poster image {
   width: 350rpx;
   height: 250rpx;
   padding: 10rpx 10rpx;
+}
+
+.icon {
+  width: 30rpx;
+  height: 30rpx;
 }
