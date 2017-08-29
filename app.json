@@ -17,19 +17,19 @@
   "tabBar": {
     "backgroundColor": "White",
     "borderStyle": "#D3D3D3",
-    "selectedColor": "#051C0A",
-    "color": "#2DB94D",
+    "selectedColor": "#58AE56",
+    "color": "#Black",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath": "images/search_active.png",
-        "selectedIconPath": "images/search.png",
+        "iconPath": "images/search.png",
+        "selectedIconPath": "images/search_active.png",
         "text": "活动"
       },
       {
         "pagePath": "pages/user/user",
-        "iconPath": "images/event_active.png",
-        "selectedIconPath": "images/event.png",    
+        "iconPath": "images/event.png",
+        "selectedIconPath": "images/event_active.png",    
         "text": "志者"
       }
     ]
