@@ -11,7 +11,11 @@
 </view>
 <view class="section">
   <view class="section__title">我的活动</view>
-
+  <view wx:if="{{ empty }}">
+    <image src="../../images/unhappy.jpeg" class ="empty-image"></image>
+    <view class= "event-empty">有什么不开心的，志愿一下！ Turn that frown upside down, by signing up to an event now...
+    </view>
+  </view>
   <view class="section__events">
 
     <block wx:for="{{events}}" wx:for-item="event">
