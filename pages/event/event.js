@@ -37,7 +37,7 @@ Page({
       success: function (res) {
         wx.hideLoading()
 
-        event = res.data;
+        let event = res.data;
 
         let status_in_chinese = null;
 
