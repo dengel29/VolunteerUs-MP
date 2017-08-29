@@ -17,11 +17,20 @@ button {
 image {
   width: 100%;
 }
+
+.icon {
+  vertical-align: middle;
+}
+
 .event-header {
   color: #2DB94D;
   font-size: 18px;
   margin: 10px;
   font-style: bolder;
+}
+
+.event-header__details {
+  margin-top: 10px;
 }
 
 .event-title{
@@ -33,7 +42,7 @@ image {
   color: grey;
   font-size: 15px;
   display: inline;
-  padding-left: 50px;
+  padding-left: 3px;
 }
 .event-more {
   color: grey;
