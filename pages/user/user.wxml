@@ -1,6 +1,9 @@
 <!--index.wxml-->
 <view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
+
+
+
+<view  bindtap="bindViewTap" class="userinfo">
     <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
     <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     <text class="userinfo-email">{{userInfo.email}}</text>
@@ -14,16 +17,16 @@
   <view class="section__events">
 
     <block wx:for="{{events}}" wx:for-item="event">
-      <navigator url="/pages/event/event">
+      <navigator url="/pages/event/event?id={{ event.id }}">
         <view class="flex-wrp section__events__event" style="flex-direction:row;">
           <view class="flex-item event-poster">
-            <image src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg"></image>
+            <image src="{{event.poster}}"></image>
           </view>
           <view class="flex-item event-details">
-            <view class="event-title">{{ event.name }}</view>
+            <view class="event-title">{{ event.title }}</view>
             <view class="event-date">{{ event.date }}</view>
             <view class="event-location">{{ event.location }}</view>
-            <button>{{ event.status}}</button>
+            <button>confirmed</button>
           </view>
         </view>
       </navigator>
