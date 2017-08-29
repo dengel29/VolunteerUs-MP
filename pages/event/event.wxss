@@ -56,9 +56,5 @@ image {
 }
 .scroll-view{
   height: 100%;
-  margin-bottom: 50px;
-}
-
-.volunteer-container {
-  box-color: red;
+  padding-bottom: 100rpx;
 }
