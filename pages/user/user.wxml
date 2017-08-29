@@ -23,14 +23,22 @@
             <image src="{{event.poster}}"></image>
           </view>
           <view class="flex-item event-details">
+          <bar class="btn-apply btn-apply--{{ event.status }}">confirmed</bar>
+
             <view class="event-title">{{ event.title }}</view>
+            <view class="event-category">{{ event.category }}</view>
             <view class="event-date">
-            <image src="../../images/time.png" class="icon"></image>
-            {{ event.date }}</view>
-            <view class="event-location">
-            <image src="../../images/location.png" class="icon"></image>
-            {{ event.location }}</view>
-            <button>confirmed</button>
+              <image src="../../images/time.png" class="icon"></image>
+              {{ event.date }}
+            </view>
+            <view class="event-location"> 
+              <image src="../../images/location.png" class="icon"></image>
+              {{ event.location }}
+            </view>
+            <view class="volunteer">
+            <image src="../../images/people.png" class="icon"></image>
+            {{ event.volunteer_number }}
+            </view>
           </view>
         </view>
       </navigator>

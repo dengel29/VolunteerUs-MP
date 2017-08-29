@@ -28,13 +28,14 @@
   border-radius: 5rpx;
   border: solid 1px rgba(0, 0, 0, 0.5);
   box-shadow: 1rpx 1rpx 1rpx 1rpx grey;
-  color: #2DB94D;
-  margin-top: 20px;
+  color: #98aa9c;
+  margin-top: 40px;
 }
 
-.section__events__event .event-details {
+.section__events__event.event-details {
   width: 100%;
-  padding: 20rpx;
+  padding: 40rpx 40rpx;
+  margin-block-start: 40rpx;
 }
 
 .event-poster image {
@@ -45,4 +46,13 @@
 .icon {
   width: 25rpx;
   height: 25rpx;
+}
+
+.btn-apply {
+  background-color: lightgreen;
+  color: black;
+  padding: 10rpx 10rpx;
+  line-height: 20rpx; 
+  font-size: small; 
+  float: right;
 }
