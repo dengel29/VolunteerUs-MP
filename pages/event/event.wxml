@@ -5,21 +5,27 @@
     <view class="event-poster">
       <image src="{{event.poster}}"></image>
     </view>
-    <view class="event-content">
+    
+    <view class="event-content section">
       <view class="event-title"> {{ event.title }}</view>
 
-      <view class="event-header">
-      <image src="../../images/time.png" class="icon"></image>
-       <view class="event-info">{{ event.date}}</view></view>
-
-      <view class="event-header">
-      <image src="../../images/location.png" class="icon"></image>
-       <view class="event-info">{{ event.location}}</view></view>
-
-      <view class="event-header">
-      <image src="../../images/people.png" class="icon"></image>
-       <view class="event-info">{{ event.volunteer_number}}</view></view>
-
+      <view class="flex-wrp event-header__details" style="flex-direction:row;">
+        <view class="flex-item event-header">
+            <image src="../../images/location.png" class="icon"></image>
+            <view class="event-info">{{ event.location}}</view>
+        </view>
+      </view>
+      <view class="flex-wrp event-header__details" style="flex-direction:row;">
+        <view class="flex-item event-header">
+            <image src="../../images/time.png" class="icon"></image>
+            <view class="event-info">{{ event.date}}</view>
+        </view>
+  
+        <view class="flex-item event-header">
+          <image src="../../images/people.png" class="icon"></image>
+          <view class="event-info">{{ event.volunteer_number}}</view>
+        </view>
+      </view>
 
       <view class="event-header">活动信息: </view>
       <view class="event-more"> {{ event.description}}  </view>
