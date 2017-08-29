@@ -1,12 +1,9 @@
 {
   "pages":[
     "pages/index/index",
-    
     "pages/event/event",    
-    
     "pages/user/user",
-    "pages/signup/signup",
-    "pages/logs/logs"
+    "pages/signup/signup"
   ],
   "window":{
     "backgroundTextStyle":"light",

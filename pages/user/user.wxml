@@ -1,8 +1,6 @@
 <!--index.wxml-->
 <view class="container">
 
-
-
 <view  bindtap="bindViewTap" class="userinfo">
     <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
     <text class="userinfo-nickname">{{userInfo.nickName}}</text>
@@ -17,18 +15,17 @@
   <view class="section__events">
 
     <block wx:for="{{events}}" wx:for-item="event">
-      <navigator url="/pages/event/event?id={{ event.id }}">
-        <view class="flex-wrp section__events__event" style="flex-direction:row;">
-          <view class="flex-item event-poster">
+      <navigator url="/pages/event/event?id={{ event.id }}" class="section__events__event-container">
+        <view class="section__events__event">
+          <view class="helper-btns">
+            <bar class="btn-apply btn-apply--{{ event.status }}">
+              {{ event.status }}
+            </bar>
+          </view>
+          <view class="event-poster">
             <image src="{{event.poster}}"></image>
           </view>
-          <view class="flex-item event-details">
-            <view class="helper-btns">
-              <bar class="btn-apply btn-apply--{{ event.status }}">
-                {{ event.status }}
-              </bar>
-            </view>
-
+          <view class="event-details">
             <view class="event-title">{{ event.title }}</view>
             <view class="event-category">{{ event.category }}</view>
             <view class="event-date">
@@ -41,8 +38,7 @@
             </view>
             <view class="volunteer">
             <image src="../../images/people.png" class="icon"></image>
-            {{ event.volunteer_number }}
-            </view>
+            {{ event.volunteer_number }}</view>
           </view>
         </view>
       </navigator>
