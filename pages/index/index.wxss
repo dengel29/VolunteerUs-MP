@@ -7,18 +7,21 @@
   width: 100%;
 }
 
+.event-details {
+  text-overflow: ellipsis; 
+}
+
 .section__title {
   padding: 10rpx 20rpx;
   text-align: left;
-  background-color: white;
+  background-color: #FAFAFA;
   color: #051C0A;
 }
 .section__events__event {
   height: 270rpx;
   margin: 10rpx 20rpx;
   border-radius: 5rpx;
-  border: solid 1px rgba(0, 0, 0, 0.5);
-  box-shadow: 1rpx 1rpx 1rpx 1rpx grey;
+  box-shadow: 0rpx 1rpx 1rpx 1rpx #CCC;
   margin-top: 20px;
 }
 
@@ -26,7 +29,7 @@
   font-weight: bolder;
   font-size: large;
   color: #051C0A;
-  height: 105rpx;
+  height: 95rpx;
   overflow: hidden;
 }
 .section__events__event .event-category {
@@ -52,6 +55,15 @@
   width: 350rpx;
   height: 250rpx;
   padding: 10rpx 10rpx;
+  flex: 2;
+}
+
+.event-poster {
+  flex: 1;
+}
+
+.event-details {
+  flex: 2;
 }
 
 .icon {

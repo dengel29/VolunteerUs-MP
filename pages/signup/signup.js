@@ -18,6 +18,7 @@ Page({
       success: function (res) {
         wx.hideLoading()
         console.log('applied!');
+
         wx.switchTab({
           url: '../user/user',
         })

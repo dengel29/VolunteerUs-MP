@@ -20,24 +20,24 @@
     <block wx:for="{{events}}" wx:for-item="event" wx:key="id">
       <navigator url="/pages/event/event?id={{ event.id }}">
         <view class="flex-wrp section__events__event" style="flex-direction:row;">
-          <view class="flex-item event-poster">
-            <image src="{{event.poster}}"></image>
-          </view>
-          <view class="flex-item event-details">
-            <view class="event-title">{{ event.title }}</view>
-            <view class="event-category">{{ event.category }}</view>
-            <view class="event-date">
-              <image src="../../images/time.png" class="icon"></image>
-              {{ event.date }}
+            <view class="flex-item event-poster">
+              <image src="{{event.poster}}"></image>
             </view>
-            <view class="event-location"> 
-              <image src="../../images/location.png" class="icon"></image>
-              {{ event.location }}
+            <view class="flex-item event-details">
+              <view class="event-title">{{ event.title }}</view>
+              <view class="event-category">{{ event.category }}</view>
+              <view class="event-date">
+                <image src="../../images/time.png" class="icon"></image>
+                {{ event.date }}
+              </view>
+              <view class="event-location"> 
+                <image src="../../images/location.png" class="icon"></image>
+                {{ event.location }}
+              </view>
+              <view class="volunteer">
+              <image src="../../images/people.png" class="icon"></image>
+              {{ event.volunteer_number }}</view>
             </view>
-            <view class="volunteer">
-            <image src="../../images/people.png" class="icon"></image>
-            {{ event.volunteer_number }}</view>
-          </view>
         </view>
       </navigator>
     </block>

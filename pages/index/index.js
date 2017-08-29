@@ -51,6 +51,7 @@ Page({
       },
       success: function(res) {
         wx.hideLoading()
+
         console.log(wx.getStorageSync('token'));
         console.log('all events')
         console.log(res.data)
