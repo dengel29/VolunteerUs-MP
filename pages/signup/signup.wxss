@@ -25,4 +25,6 @@
   margin-bottom: 70rpx;
   margin-top: 10px;
   width: 600rpx;
+  height:1.9rem;
+
 }
