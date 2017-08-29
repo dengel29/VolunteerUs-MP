@@ -46,6 +46,5 @@
   margin-top: 20px;
 }
 .section__events__event .event-location{
-  margin-top: 60px;
-  text-align: right;
+  margin-top: 40px;
 }
