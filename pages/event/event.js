@@ -41,7 +41,8 @@ Page({
 
         console.log(res.data)
         page.setData({
-          event: res.data
+          event: res.data,
+          event_owner: res.data.id == wx.getStorageSync('currentUserId')
         })
       }
     })
