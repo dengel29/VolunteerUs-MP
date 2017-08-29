@@ -25,7 +25,7 @@
           <view class="flex-item event-details">
             <view class="helper-btns">
               <bar class="btn-apply btn-apply--{{ event.status }}">
-                confirmed
+                {{ event.status }}
               </bar>
             </view>
 

@@ -35,8 +35,14 @@
       <view class="event-more">{{ event.volunteer_perks}}</view>
     </view>
   </scroll-view>
-
-    <navigator wx:if="{{!event_owner}}" url="../signup/signup?id={{ event.id }}">
-    <button bindtap="submit" type="primary" class="volunteer_add">志愿我们</button>   
-    </navigator>
+    <view wx:if="{{applied}}">
+      <button disabled type="primary" class="volunteer_add">
+        {{ status_in_chinese }}
+      </button>
+    </view>
+    <view wx:else>
+      <navigator wx:if="{{!event_owner}}" url="../signup/signup?id={{ event.id }}">
+      <button bindtap="submit" type="primary" class="volunteer_add">志愿我们</button>   
+      </navigator>
+    </view>
 </view>
