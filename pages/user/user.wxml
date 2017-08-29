@@ -23,7 +23,11 @@
             <image src="{{event.poster}}"></image>
           </view>
           <view class="flex-item event-details">
-          <bar class="btn-apply btn-apply--{{ event.status }}">confirmed</bar>
+            <view class="helper-btns">
+              <bar class="btn-apply btn-apply--{{ event.status }}">
+                confirmed
+              </bar>
+            </view>
 
             <view class="event-title">{{ event.title }}</view>
             <view class="event-category">{{ event.category }}</view>
