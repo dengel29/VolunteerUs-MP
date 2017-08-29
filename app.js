@@ -53,7 +53,7 @@ App({
   globalData: {
     userInfo: null,
     // baseUrl: 'https://volunteer-us.shanghaiwogeng.com/'
-    baseUrl: 'https://volunteer-us.shanghaiwogeng.com/'
+    baseUrl: 'http://localhost:3000/'
   },
 
 })
