@@ -2,29 +2,33 @@
 <view class="header">
  <view class="h1-header">用户注册</view>
 </view>
-<view class="container">  
-  <view class="usermotto">  
-    <text class="user-motto">{{motto}}</text>  
-    名字：  
-    <view class="section">
-      <input type="text" placeholder="John Smith"/>  
-    </view>
-    邮箱：  
-    <view class="section">
-     <input type="text" placeholder="johnsmith@gmail.com"/>  
-    </view>
-    联系电话：  
-    <view class="section">
-     <input type="text" placeholder="13293843827"/> 
-    </view> 
-    年龄:
-    <view class="section">
-     <input type="text" placeholder="21"/>  
-    </view>
-    在校大学:
-    <view class="section">
-      <input type="text" placeholder="Sichuan University"/> 
+
+<form bindsubmit="formSubmit">
+  <view class="container">  
+    <view class="usermotto">  
+      <text class="user-motto">{{motto}}</text>  
+      名字：  
+      <view class="section">
+        <input type="text" placeholder="John Smith" name="name" />  
+      </view>
+      邮箱：  
+      <view class="section">
+      <input type="text" placeholder="johnsmith@gmail.com" name="email"/>  
+      </view>
+      联系电话：  
+      <view class="section">
+      <input type="text" placeholder="13293843827" name="phone_number" /> 
+      </view> 
+      年龄:
+      <view class="section">
+      <input type="text" placeholder="21" name="age" />  
+      </view>
+      在校大学:
+      <view class="section">
+        <input type="text" placeholder="Sichuan University" name="university"/> 
+      </view>  
     </view>  
   </view>  
-</view>  
-<button bindtap="formSubmit" type="primary" class="volunteer_add">申请志愿</button>
+
+  <button form-type="submit" type="primary" class="volunteer_add">申请志愿</button>
+</form>
