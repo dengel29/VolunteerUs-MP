@@ -9,9 +9,14 @@ Page({
       title: '加载中',
     })
 
+    let formData = e.detail.value;
+
+    console.log(formData);
+
     wx.request({
       url: app.globalData.baseUrl + 'api/v1/events/' + page.data.event_id + '/actions/apply',
       method: 'post',
+      data: formData,
       header: {
         'X-User-Token': wx.getStorageSync('token'),
       },
@@ -29,7 +34,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-    event_id: null
+    event_id: null,
+    name: null,
+    email: null,
+    phone_number: null,
+    age: null,
+    university: null,
   },
 
   /**
@@ -42,4 +52,6 @@ Page({
       event_id: options.id
     })
   },
+
+  
 })
